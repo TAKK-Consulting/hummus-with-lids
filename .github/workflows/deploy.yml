@@ -12,5 +12,3 @@ jobs:
           cpanel_token: '${{ secrets.CPANEL_TOKEN }}'
       - name: echo deploy-duration
         run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
-
-        D566L0HV49JUK8RCQA06E8Z6Y8TXRZOD
