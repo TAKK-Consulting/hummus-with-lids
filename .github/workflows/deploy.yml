@@ -10,7 +10,7 @@ jobs:
         id: deploy
         uses: pinkasey/cpanel-deploy-action@v1.0.0
         with:
-          hostname: "https://capulet.ldn.kualo.net:2083"
+          hostname: "https://capulet.ldn.kualo.net"
           repository_root: "/home/takkcons/repositories/hummus-with-lids"
           branch: main
           cpanel_username: "takkcons"
