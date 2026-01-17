@@ -1,0 +1,19 @@
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to cPanel
+        id: deploy
+        uses: pinkasey/cpanel-deploy-action@v1.0.0
+        with:
+          hostname: "https://capulet.ldn.kualo.net"
+          repository_root: "/home/takkcons/repositories/hummus-with-lids"
+          branch: main
+          cpanel_username: "takkcons"
+          cpanel_token: "${{ secrets.CPANEL_TOKEN }}"
+      - name: echo deploy-duration
+        run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
