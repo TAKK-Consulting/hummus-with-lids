@@ -75,7 +75,7 @@ footer * {
     background-color: #fff;
     border: 1px solid var(--dark-brown);
     border-radius: calc(1rem + 1px);
-    flex: 0 0 40vw;
+    flex: 0 0 45vw;
     margin: 2vw;
     position: relative;
     text-align: center;
