@@ -139,6 +139,10 @@ footer * {
     background-size: 60%;
 }
 
+#marks-and-spencer dt {
+    letter-spacing: -0.05rem;
+}
+
 @media (min-width: 575px) {
     .hummus-brand__container {
         flex-basis: 25%;
@@ -146,6 +150,10 @@ footer * {
 
     .hummus-brand {
         padding-top: 20vw;
+    }
+
+    #marks-and-spencer dt {
+        letter-spacing: normal;
     }
 }
 
