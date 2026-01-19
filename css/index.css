@@ -93,6 +93,7 @@ footer * {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: 0.25rem 0;
+    white-space: nowrap;
 }
 
 .hummus-brand dt,
