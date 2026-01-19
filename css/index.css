@@ -1,0 +1,218 @@
+:root {
+    --hummus-beige: rgb(240, 225, 185);
+    --dark-brown: rgb(66, 61, 47);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header,
+.page-footer {
+    background-color: var(--dark-brown);
+    color: #fff;
+    padding: 20px;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.page-header a,
+.page-footer a {
+    color: #fff;
+}
+
+.page-body {
+    padding: 20px;
+
+    flex-grow: 1;
+}
+
+.page-body p {
+    border: 1px solid var(--dark-brown);
+}
+
+body {
+    background-color: var(--hummus-beige);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: rgb(66, 61, 47);
+    padding: 0.5rem 1rem;
+}
+
+footer * {
+    color: var(--hummus-beige);
+}
+
+#supermarkets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hummus-brand__container {
+    background-color: #fff;
+    border: 1px solid var(--dark-brown);
+    border-radius: calc(1rem + 1px);
+    flex: 0 0 40vw;
+    margin: 2vw;
+    /* padding: 1vw; */
+    position: relative;
+    text-align: center;
+}
+
+.hummus-brand {
+    background-position: 50% 0.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 30vw;
+}
+
+.hummus-brand dt {
+    background-color: rgba(51, 51, 0, 0.5);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 0.25rem 0;
+}
+
+.hummus-brand dt,
+.hummus-brand dd {
+    color: #fff;
+    font-weight: 700;
+}
+
+.hummus-brand dd {
+    margin-inline-start: 0;
+    background-color: rgb(102, 102, 102);
+    border-radius: 1.5rem;
+    border: 0.25rem solid rgb(51, 51, 51);
+    height: 2.5rem;
+    line-height: 1.75;
+    position: absolute;
+    right: -0.25rem;
+    top: -0.25rem;
+    transform: rotate(30deg);
+    width: 2.5rem;
+}
+
+.hummus-brand--lids-yes dd {
+    background-color: rgb(0, 153, 0);
+    border-color: rgb(0, 102, 0);
+}
+
+.hummus-brand--lids-no dd {
+    background-color: rgb(153, 0, 0);
+    border-color: rgb(102, 0, 0);
+}
+
+.hummus-brand--logo-hor {
+    background-position-y: 40%;
+    background-size: 90%;
+}
+
+.hummus-brand--logo-ver {
+    background-size: 55%;
+}
+
+.hummus-brand--logo-squ {
+    background-size: 60%;
+}
+
+@media (min-width: 575px) {
+    .hummus-brand__container {
+        flex-basis: 25%;
+    }
+
+    .hummus-brand {
+        padding-top: 20vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .hummus-brand__container {
+        flex-basis: 20%;
+    }
+
+    .hummus-brand {
+        padding-top: 15vw;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    header>div,
+    #content,
+    footer p {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .hummus-brand__container {
+        flex-basis: 28%;
+    }
+}
+
+#aldi {
+    background-image: url("/img/Aldi_logo.svg");
+}
+
+#asda {
+    background-image: url("/img/ASDA_logo.svg");
+}
+
+#co-op {
+    background-image: url("/img/Co-op_logo.svg");
+}
+
+#iceland {
+    background-image: url("/img/Iceland_Foods_logo.svg");
+}
+
+#lidl {
+    background-image: url("/img/Lidl_logo.svg");
+}
+
+#marks-and-spencer {
+    background-image: url("/img/M-and-S_logo.svg");
+}
+
+#morrisons {
+    background-image: url("/img/Morrisons_logo.svg");
+}
+
+#ocado {
+    background-image: url("/img/Ocado_Group_Logo.svg");
+}
+
+#sainsburys {
+    background-image: url("/img/Sainsburys_logo.svg");
+}
+
+#tesco {
+    background-image: url("/img/Tesco_logo.svg");
+}
+
+#waitrose {
+    background-image: url("/img/Waitrose_logo.svg");
+}
