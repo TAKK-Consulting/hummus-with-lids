@@ -1,3 +1,8 @@
+:root {
+    --hummus-beige: rgb(240, 225, 185);
+    --dark-brown: rgb(66, 61, 47);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -21,8 +26,8 @@ body {
 
 .page-header,
 .page-footer {
-    background-color: rgb(66, 61, 47);
-    color: white;
+    background-color: var(--dark-brown);
+    color: #fff;
     padding: 20px;
 
     flex-grow: 0;
@@ -41,11 +46,11 @@ body {
 }
 
 .page-body p {
-    border: 1px solid grey;
+    border: 1px solid var(--dark-brown);
 }
 
 body {
-    background-color: rgb(240, 225, 185);
+    background-color: var(--hummus-beige);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
@@ -57,7 +62,7 @@ footer {
 }
 
 footer * {
-    color: rgb(240, 225, 185);
+    color: var(--hummus-beige);
 }
 
 #supermarkets {
@@ -67,8 +72,8 @@ footer * {
 }
 
 .hummus-brand__container {
-    background-color: #fffffff1;
-    border: 1px solid #999;
+    background-color: #fff;
+    border: 1px solid var(--dark-brown);
     border-radius: calc(1rem + 1px);
     flex: 0 0 40vw;
     margin: 2vw;
