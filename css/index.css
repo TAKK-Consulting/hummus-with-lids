@@ -34,6 +34,11 @@ body {
     flex-shrink: 0;
 }
 
+.page-header__image {
+    float: right;
+    width: 35vw;
+}
+
 .page-header a,
 .page-footer a {
     color: #fff;
@@ -161,6 +166,10 @@ footer * {
 }
 
 @media (min-width: 768px) {
+    .page-header__image {
+        width: 25vw;
+    }
+
     .hummus-brand__container {
         flex-basis: 20%;
     }
@@ -171,11 +180,16 @@ footer * {
 }
 
 @media (min-width: 1024px) {
+
     header>div,
     #content,
     footer p {
         max-width: 80vw;
         margin: 0 auto;
+    }
+
+    .page-header__image {
+        width: 200px;
     }
 
     .hummus-brand__container {
