@@ -180,6 +180,10 @@ footer * {
     background-image: url("/img/Co-op_logo.svg");
 }
 
+#iceland {
+    background-image: url("/img/Iceland_Foods_logo.svg");
+}
+
 #lidl {
     background-image: url("/img/Lidl_logo.svg");
 }
@@ -190,6 +194,10 @@ footer * {
 
 #morrisons {
     background-image: url("/img/Morrisons_logo.svg");
+}
+
+#ocado {
+    background-image: url("/img/Ocado_Group_Logo.svg");
 }
 
 #sainsburys {
