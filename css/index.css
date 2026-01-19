@@ -103,7 +103,7 @@ footer * {
     border-radius: 1.5rem;
     border: 0.25rem solid rgb(51, 51, 51);
     height: 2.5rem;
-    line-height: 2;
+    line-height: 1.75;
     position: absolute;
     right: -0.25rem;
     top: -0.25rem;
@@ -136,7 +136,7 @@ footer * {
 
 @media (min-width: 575px) {
     .hummus-brand__container {
-        flex-basis: 25vw;
+        flex-basis: 25%;
     }
 
     .hummus-brand {
@@ -146,7 +146,7 @@ footer * {
 
 @media (min-width: 768px) {
     .hummus-brand__container {
-        flex-basis: 20vw;
+        flex-basis: 20%;
     }
 
     .hummus-brand {
@@ -156,11 +156,15 @@ footer * {
 
 @media (min-width: 1024px) {
 
-    header,
+    header>div,
     #content,
     footer p {
         max-width: 80vw;
         margin: 0 auto;
+    }
+
+    .hummus-brand__container {
+        flex-basis: 28%;
     }
 }
 
