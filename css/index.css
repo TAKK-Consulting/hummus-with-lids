@@ -28,7 +28,7 @@ body {
 .page-footer {
     background-color: var(--dark-brown);
     color: #fff;
-    padding: 20px;
+    padding: 1.25rem;
 
     flex-grow: 0;
     flex-shrink: 0;
@@ -40,13 +40,16 @@ body {
 }
 
 .page-body {
-    padding: 20px;
-
+    padding: 1.25rem 0;
     flex-grow: 1;
 }
 
 .page-body p {
     border: 1px solid var(--dark-brown);
+}
+
+.page-body h2 {
+    padding: 0 1.25rem;
 }
 
 body {
