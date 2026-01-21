@@ -116,13 +116,14 @@ footer * {
     border-radius: 1.5rem;
     border: 0.25rem solid rgb(51, 51, 51);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: 2.5rem;
+    font-size: 1.25rem;
+    height: 2.75rem;
     line-height: 1.75;
     position: absolute;
     right: -0.25rem;
     top: -0.25rem;
     transform: rotate(30deg);
-    width: 2.5rem;
+    width: 2.75rem;
 }
 
 .hummus-brand--lids-yes dd {
@@ -193,8 +194,25 @@ footer * {
         width: 200px;
     }
 
+    .hummus-brand dd {
+        border-radius: 1.75rem;
+        font-size: 1.75rem;
+        line-height: 1.5;
+        height: 3rem;
+        width: 3rem;
+    }
+
     .hummus-brand__container {
         flex-basis: 28%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hummus-brand dd {
+        font-size: 2rem;
+        line-height: 1.5;
+        height: 3.5rem;
+        width: 3.5rem;
     }
 }
 
